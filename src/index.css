@@ -1,0 +1,72 @@
+:root {
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-body: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-ui: "Avenir Next Condensed", "Arial Narrow", "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #142033;
+  --bg-top: #f6f4ef;
+  --bg-bottom: #eef2f6;
+  --bg-accent: rgba(255, 255, 255, 0.78);
+  --text-main: #142033;
+  --text-soft: #5b6779;
+  --text-muted: #758295;
+  --line-soft: rgba(160, 175, 196, 0.34);
+  --line-strong: rgba(125, 145, 170, 0.46);
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-solid: #ffffff;
+  --surface-muted: #f5f7fa;
+  --accent: #1c5fb8;
+  --accent-deep: #163f76;
+  --accent-soft: #e9f1fb;
+  --success-soft: #edf8f1;
+  --success-text: #1b6a3b;
+  --danger-soft: #fff0ef;
+  --danger-text: #a54141;
+  --shadow-soft: 0 18px 40px rgba(21, 31, 45, 0.07);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.62), transparent 30%),
+    linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 14% 16%, rgba(197, 213, 233, 0.28), transparent 22%),
+    radial-gradient(circle at 86% 10%, rgba(255, 220, 197, 0.22), transparent 20%);
+  pointer-events: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
