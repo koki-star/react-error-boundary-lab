@@ -1,6 +1,8 @@
 # React Error Boundary Lab
 
-A small React app that shows how an Error Boundary can isolate a broken weather widget so the rest of the dashboard keeps working.
+This is a small React app built around an Error Boundary pattern.
+
+The weather widget is used to show both normal and broken states, so you can see how one component can fail without taking down the rest of the dashboard.
 
 ## How to run
 
